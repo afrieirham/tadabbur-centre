@@ -62,6 +62,56 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="relative pt-[200px] pb-[100px]">
+        <img className="absolute top-0 right-0 mt-20" src="/pattern.png" />
+        <img
+          className="absolute bottom-0 left-0 rotate-180 mb-36"
+          src="/pattern.png"
+        />
+        <div className="flex items-center justify-between max-w-screen-lg mx-auto">
+          <img className="w-[510px]" src="/sub-1.png" />
+          <div className="flex flex-col py-[52px] space-y-8 w-[400px]">
+            <h2 className="text-2xl font-semibold text-[#064F57]">
+              Mengapa Tadabbur?
+            </h2>
+            <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
+            <div className="space-y-4">
+              <p>
+                Tadabbur disebut di dalam Al-Quran sebanyak empat kali, dan
+                kesemuanya merujuk kepada matlamat yang perlu dicapai bagi
+                seseorang yang berinteraksi dengan kitab Allah.
+              </p>
+              <p>
+                Tadabbur adalah sesuatu yang dirasai di dalam hati selepas
+                seseorang memahami maksud tersurat di sebalik setiap ayat dengan
+                berpandukan penjelasan tafsir daripada para ulama.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row-reverse items-center justify-between max-w-screen-lg mx-auto">
+          <img className="w-[510px]" src="/sub-2.png" />
+          <div className="flex flex-col py-[52px] space-y-8 w-[400px]">
+            <div className="space-y-4">
+              <p>
+                Tadabbur adalah proses menunaikan hak ayat Allah iaitulah
+                menghayati sedalam-dalamnya makna sebenar setiap
+                ayat seolah-olah ayat berkenaan baru sahaja diturunkan,
+              </p>
+              <p>
+                disasarkan pula penurunannya kepada pembaca dan penurunan itu
+                berlaku disebabkan permasalahan semasa yang baru sahaja kita
+                hadapi, yang kita kebuntuan mencari dimanakah solusinya.
+              </p>
+              <p>
+                Dalam bahasa mudah, tadabbur adalah kita bertanya soalan berikut
+                setiap kali selepas kita membaca sesuatu ayat:
+              </p>
+              <p className="font-semibold">— Dimanakah aku dalam ayat ini?</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
