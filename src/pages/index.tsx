@@ -112,6 +112,40 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="flex flex-col items-center py-[100px] bg-[#F6F9F9] space-y-10">
+        <h2 className="text-2xl font-bold text-[#064F57]">Matlamat Kami</h2>
+        <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
+        <div className="grid max-w-screen-lg grid-cols-3 gap-10 mx-auto">
+          {[
+            {
+              icon: "/icon-1.png",
+              title: "Pusat Pendidikan",
+              desc: "Menawarkan pengajian tadabbur secara fizikal dan atas talian",
+            },
+            {
+              icon: "/icon-2.png",
+              title: "Pusat Penyelidikan",
+              desc: "Menerbitkan pelbagai jenis buku tadabbur yang berpotensi untuk dijadikan rujukan umum",
+            },
+            {
+              icon: "/icon-3.png",
+              title: "Pusat Latihan",
+              desc: "Memberi latihan kepada graduan pengajian Tafsir & al-Quran untuk menyampaikan mesej al-Quran kepada masyarakat",
+            },
+          ].map((item) => (
+            <div
+              key={item.icon}
+              className="w-[330px] bg-white rounded-2xl px-10 py-12 space-y-6 border-2 border-[#F2F2F2]"
+            >
+              <img src={item.icon} className="w-20 h-20" />
+              <p className="text-[#064F57] text-2xl font-medium">
+                {item.title}
+              </p>
+              <p>{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
