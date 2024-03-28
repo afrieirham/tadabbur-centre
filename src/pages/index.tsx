@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div className={`${inter.className}`}>
-      <nav className="flex items-center justify-between w-full max-w-screen-lg px-16 py-5 mx-auto lg:px-8">
+      <nav className="flex items-center justify-between w-full max-w-screen-lg px-6 py-5 mx-auto sm:px-16 lg:px-8">
         <img src="/logo.png" className="md:w-72 w-52" />
         <div className="space-x-4 text-sm font-medium text-[#064F57] hidden md:block">
           <a
@@ -163,7 +163,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center py-[50px] md:py-[100px] bg-[#F6F9F9] space-y-5 md:space-y-10 px-8 ">
+      <section className="flex flex-col items-center py-[50px] md:py-[100px] bg-[#F6F9F9] space-y-5 md:space-y-10 px-6 ">
         <h2 className="text-2xl font-bold text-[#064F57]">Matlamat Kami</h2>
         <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
         <div className="grid max-w-screen-lg grid-cols-1 gap-5 mx-auto md:grid-cols-3 ">
@@ -186,7 +186,7 @@ export default function Home() {
           ].map((item) => (
             <div
               key={item.icon}
-              className="flex flex-col justify-center items-center sm:items-start sm:justify-start w-full sm:text-left text-center bg-white rounded-2xl px-14 py-12 space-y-6 border-2 border-[#F2F2F2]"
+              className="flex flex-col justify-center items-center sm:items-start sm:justify-start w-full sm:text-left text-center bg-white rounded-2xl px-8 py-6 sm:px-14 sm:py-12 space-y-6 border-2 border-[#F2F2F2]"
             >
               <img src={item.icon} className="w-20 h-20" />
               <h3 className="text-[#064F57] text-2xl font-medium">
@@ -202,7 +202,7 @@ export default function Home() {
           <img src={`/slide-${p}.png`} className="object-cover h-36 w-60" />
         ))}
       </section>
-      <section className="bg-[#064F57] py-[50px] sm:py-[100px] flex flex-col items-center space-y-5 sm:space-y-10 px-8">
+      <section className="bg-[#064F57] py-[50px] sm:py-[100px] flex flex-col items-center space-y-5 sm:space-y-10 px-6">
         <h2 className="text-2xl font-semibold text-center text-white sm:text-4xl sm:text-left">
           Projek Tadabbur Centre
         </h2>
@@ -274,7 +274,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-[50px] sm:py-[100px] bg-[#F6F9F9] space-y-5 sm:space-y-10 px-8">
+      <section className="py-[50px] sm:py-[100px] bg-[#F6F9F9] space-y-5 sm:space-y-10 px-6">
         <div className="flex flex-col items-center justify-between w-full max-w-screen-lg px-4 mx-auto sm:flex-row ">
           <h2 className="text-2xl font-semibold text-[#064F57] ">
             Bacaan & Buah Fikir
@@ -342,7 +342,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="bg-white py-[50px] sm:py-[100px] flex flex-col items-center space-y-5 sm:space-y-10 px-8">
+      <section className="bg-white py-[50px] sm:py-[100px] flex flex-col items-center space-y-5 sm:space-y-10 px-6">
         <h2 className="text-2xl font-semibold text-[#064F57] text-center sm:text-left">
           Dengar Cerita Pelajar-pelajar Kami
         </h2>
@@ -487,7 +487,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <footer className="py-20 bg-[#064F57] px-8">
+      <footer className="py-20 bg-[#064F57] px-6">
         <div className="flex flex-col items-center justify-between w-full max-w-screen-lg py-5 mx-auto space-y-4 md:space-y-0 md:flex-row">
           <img src="/logo-white.png" className="w-72" />
           <div className="space-x-6 text-sm text-white">
