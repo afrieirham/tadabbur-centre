@@ -10,7 +10,7 @@ export default function Home() {
         title="Al-Quran untuk Semua | Tadabbur Centre"
         description="Tadabbur Centre ditubuhkan untuk menyahut rasa dahaga masyarakat
               kepada pengisian Al Quran."
-        ogPath="/"
+        ogPath="/og.png"
         path="/"
       />
       <nav className="flex items-center justify-between w-full max-w-screen-lg px-6 py-5 mx-auto sm:px-16 lg:px-8">
