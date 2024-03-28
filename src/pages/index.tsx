@@ -7,13 +7,31 @@ export default function Home() {
     <div className={`${inter.className}`}>
       <nav className="flex items-center justify-between w-full max-w-screen-lg py-5 mx-auto">
         <img src="/logo.png" className="w-72" />
-        <div className="space-x-6 text-sm font-medium text-[#064F57]">
-          <a href="#" className="text-[#F75B03] font-semibold">
+        <div className="space-x-4 text-sm font-medium text-[#064F57]">
+          <a
+            href="#"
+            className="text-[#F75B03] font-semibold px-3 py-2 transition-all rounded-lg hover:bg-gray-100"
+          >
             Utama
           </a>
-          <a href="#">Tadabbur+</a>
-          <a href="#">Program</a>
-          <a href="#">Produk</a>
+          <a
+            href="#"
+            className="px-3 py-2 transition-all rounded-lg hover:bg-gray-100"
+          >
+            Tadabbur+
+          </a>
+          <a
+            href="#"
+            className="px-3 py-2 transition-all rounded-lg hover:bg-gray-100"
+          >
+            Program
+          </a>
+          <a
+            href="#"
+            className="px-3 py-2 transition-all rounded-lg hover:bg-gray-100"
+          >
+            Produk
+          </a>
         </div>
       </nav>
       {/* main section */}
@@ -34,7 +52,7 @@ export default function Home() {
                 className="flex flex-grow px-3 py-2 text-sm border rounded-md border-input bg-background ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 placeholder="faris@gmail.com"
               />
-              <button className="flex-shrink bg-[#F75B03] text-white px-3 py-2 rounded text-sm font-medium">
+              <button className="flex-shrink bg-[#F75B03] hover:bg-[#ff8b47] transition-all duration-300 text-white px-3 py-2 rounded text-sm font-medium">
                 Langgan
               </button>
             </form>
@@ -172,7 +190,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <button className="flex-shrink bg-[#F75B03] text-white px-3 py-2 rounded text-sm font-medium">
+              <button className="flex-shrink bg-[#F75B03] hover:bg-[#ff8b47] transition-all duration-300 text-white px-3 py-2 rounded text-sm font-medium">
                 Jadual Program
               </button>
             </div>
@@ -194,7 +212,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <button className="flex-shrink bg-[#F75B03] text-white px-3 py-2 rounded text-sm font-medium">
+              <button className="flex-shrink bg-[#F75B03] hover:bg-[#ff8b47] transition-all duration-300 text-white px-3 py-2 rounded text-sm font-medium">
                 Kedai Online
               </button>
             </div>
@@ -216,7 +234,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <button className="flex-shrink bg-[#F75B03] text-white px-3 py-2 rounded text-sm font-medium">
+              <button className="flex-shrink bg-[#F75B03] hover:bg-[#ff8b47] transition-all duration-300 text-white px-3 py-2 rounded text-sm font-medium">
                 Sertai Kami
               </button>
             </div>
@@ -228,7 +246,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold text-[#064F57]">
             Bacaan & Buah Fikir
           </h2>
-          <button className="px-3 py-2 bg-white rounded-lg text-[#36364A] text-sm font-medium border">
+          <button className="px-3 py-2 bg-white rounded-lg text-[#36364A] hover:bg-gray-100 transition-all duration-300 text-sm font-medium border">
             Lihat Semua
           </button>
         </div>
@@ -426,7 +444,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <button className="w-20 py-1 mx-auto text-sm border rounded-full">
+          <button className="w-20 py-1 mx-auto text-sm transition-all duration-300 border rounded-full hover:bg-gray-100">
             Lagi
           </button>
         </div>
