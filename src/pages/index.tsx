@@ -38,11 +38,11 @@ export default function Home() {
             xmlns="http://www.w3.org/2000/svg"
             className="w-6 h-6 icon icon-tabler icon-tabler-menu-2"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="#2c3e50"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M4 6l16 0" />
@@ -52,7 +52,8 @@ export default function Home() {
         </div>
       </nav>
       {/* main section */}
-      <section className="relative px-6 sm:px-16 lg:px-8 pt-[60px] pb-[280px] sm:pb-[120px] md:py-[120px] bg-gradient-to-b from-[#006559] to-[#064F57] z-10">
+      {/* <section className="relative px-6 sm:px-16 lg:px-8 pt-[60px] pb-[280px] sm:pb-[120px] md:py-[120px] bg-gradient-to-b from-[#006559] to-[#064F57] z-10"> */}
+      <section className="relative px-6 sm:px-16 lg:px-8 pt-[60px] pb-[280px] sm:pb-[120px] md:py-[120px] hero z-10">
         <div className="flex flex-col items-center max-w-screen-lg mx-auto space-y-8 md:space-x-8 md:flex-row md:space-y-0">
           <div className="flex-1 space-y-8 text-center md:text-left">
             <h1 className="text-4xl font-semibold text-white sm:text-6xl">
@@ -198,8 +199,12 @@ export default function Home() {
         </div>
       </section>
       <section className="py-[30px] my-[70px] w-full flex space-x-5 overflow-scroll">
-        {[1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6].map((p) => (
-          <img src={`/slide-${p}.png`} className="object-cover h-36 w-60" />
+        {[1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6].map((p, i) => (
+          <img
+            key={i}
+            src={`/slide-${p}.png`}
+            className="object-cover h-36 w-60"
+          />
         ))}
       </section>
       <section className="bg-[#064F57] py-[50px] sm:py-[100px] flex flex-col items-center space-y-5 sm:space-y-10 px-6">
@@ -546,7 +551,7 @@ export default function Home() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_2_8965)">
+                <g clipPath="url(#clip0_2_8965)">
                   <rect
                     y="0.728516"
                     width="26"

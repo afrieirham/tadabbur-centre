@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero {
+  background: linear-gradient(to bottom, #006559, #064f57),
+    url("/background.png");
+}
