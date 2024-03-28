@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </nav>
       {/* main section */}
-      <section className="relative px-6 sm:px-16 lg:px-8 pt-[60px] pb-[280px] sm:pb-[120px] md:py-[120px] hero z-10">
+      <section className="relative px-6 sm:px-16 lg:px-8 pt-[60px] pb-[280px] sm:pb-[120px] md:py-[120px] bg-[url(/hero.png)] bg-no-repeat bg-cover z-10">
         <div className="flex flex-col items-center max-w-screen-lg mx-auto space-y-8 md:space-x-8 md:flex-row md:space-y-0">
           <div className="flex-1 space-y-8 text-center md:text-left">
             <h1 className="text-4xl font-semibold text-white sm:text-6xl">
