@@ -232,8 +232,11 @@ export default function Home() {
             Lihat Semua
           </button>
         </div>
-        <div className="grid max-w-screen-lg grid-cols-3 gap-8 mx-auto">
-          <div className="space-y-10">
+        <div className="grid max-w-screen-lg grid-cols-3 gap-4 mx-auto">
+          <a
+            href="#"
+            className="p-4 space-y-10 transition-all duration-300 rounded-3xl hover:-translate-y-1 hover:bg-gray-200"
+          >
             <img src="/article-1.png" />
             <div className="space-y-4">
               <h3 className="text-[#064F57] font-medium">
@@ -246,8 +249,11 @@ export default function Home() {
                 congue eu elit sed rhoncus.
               </p>
             </div>
-          </div>
-          <div className="space-y-10">
+          </a>
+          <a
+            href="#"
+            className="p-4 space-y-10 transition-all duration-300 rounded-3xl hover:-translate-y-1 hover:bg-gray-200"
+          >
             <img src="/article-2.png" />
             <div className="space-y-4">
               <h3 className="text-[#064F57] font-medium">
@@ -260,8 +266,11 @@ export default function Home() {
                 congue eu elit sed rhoncus.
               </p>
             </div>
-          </div>
-          <div className="space-y-10">
+          </a>
+          <a
+            href="#"
+            className="p-4 space-y-10 transition-all duration-300 rounded-3xl hover:-translate-y-1 hover:bg-gray-200"
+          >
             <img src="/article-3.png" />
             <div className="space-y-4">
               <h3 className="text-[#064F57] font-medium">
@@ -274,7 +283,7 @@ export default function Home() {
                 congue eu elit sed rhoncus.
               </p>
             </div>
-          </div>
+          </a>
         </div>
       </section>
       <section className="bg-white py-[100px] flex flex-col items-center space-y-10">
