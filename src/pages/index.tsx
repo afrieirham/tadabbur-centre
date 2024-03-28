@@ -502,9 +502,20 @@ export default function Home() {
         </div>
         <hr className="max-w-screen-lg mx-auto mt-20 opacity-70 mb-7" />
         <div className="flex flex-col items-center max-w-screen-lg mx-auto space-y-4 sm:space-y-0 sm:justify-between sm:flex-row">
-          <p className="text-sm text-center text-white opacity-50 sm:text-left">
+          <div className="text-sm text-center text-white opacity-50 sm:text-left">
             Copyright of Tadabbur Centre © All Rights Reserved
-          </p>
+            <br />
+            <span className="text-[10px]">
+              Redesigned by @
+              <a className="hover:underline" href="https://x.com/IncheFaris">
+                IncheFaris
+              </a>{" "}
+              | Coded by @
+              <a className="hover:underline" href="https://x.com/afrieirham_">
+                afrieirham_
+              </a>
+            </span>
+          </div>
           <div className="flex space-x-2">
             <a href="#" className="opacity-50">
               <svg
