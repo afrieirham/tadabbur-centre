@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className={`${inter.className}`}>
       <nav className="flex items-center justify-between w-full max-w-screen-lg px-16 py-5 mx-auto lg:px-8">
-        <img src="/logo.png" className="w-72" />
-        <div className="space-x-4 text-sm font-medium text-[#064F57]">
+        <img src="/logo.png" className="md:w-72 w-52" />
+        <div className="space-x-4 text-sm font-medium text-[#064F57] hidden md:block">
           <a
             href="#"
             className="text-[#F75B03] font-semibold px-3 py-2 transition-all rounded-lg hover:bg-gray-100"
@@ -33,11 +33,28 @@ export default function Home() {
             Produk
           </a>
         </div>
+        <div className="md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 icon icon-tabler icon-tabler-menu-2"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+          </svg>
+        </div>
       </nav>
       {/* main section */}
-      <section className="relative px-16 lg:px-8 py-[120px] bg-gradient-to-b from-[#006559] to-[#064F57] z-10">
-        <div className="flex items-center max-w-screen-lg mx-auto space-x-8">
-          <div className="flex-1 space-y-8">
+      <section className="relative px-16 lg:px-8 pt-[60px] pb-[120px] md:py-[120px] bg-gradient-to-b from-[#006559] to-[#064F57] z-10">
+        <div className="flex flex-col items-center max-w-screen-lg mx-auto space-y-8 md:space-x-8 md:flex-row md:space-y-0">
+          <div className="flex-1 space-y-8 text-center md:text-left">
             <h1 className="text-6xl font-semibold text-white">
               Al-Qur&apos;an
               <br />
@@ -47,23 +64,23 @@ export default function Home() {
               Tadabbur Centre ditubuhkan untuk menyahut rasa dahaga masyarakat
               kepada pengisian Al Quran.
             </p>
-            <form className="flex w-10/12 space-x-4">
+            <form className="flex flex-col items-center justify-center w-full max-w-[400px] mx-auto space-y-4 md:space-y-0 md:space-x-4 md:flex-row md:w-10/12 md:mx-0">
               <input
-                className="flex flex-grow px-3 py-2 text-sm border rounded-md border-input bg-background ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                className="flex flex-grow w-full px-3 py-2 text-sm border rounded-md md:w-auto border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 placeholder="faris@gmail.com"
               />
-              <button className="flex-shrink bg-[#F75B03] hover:bg-[#ff8b47] transition-all duration-300 text-white px-3 py-2 rounded text-sm font-medium">
+              <button className="flex-shrink w-full md:w-auto bg-[#F75B03] hover:bg-[#ff8b47] transition-all duration-300 text-white px-3 py-2 rounded text-sm font-medium">
                 Langgan
               </button>
             </form>
           </div>
           <img
-            className="w-full max-w-[400px] lg:max-w-[510px]"
+            className="w-full aspect-video md:aspect-auto rounded-lg object-cover md:max-w-[400px] lg:max-w-[510px]"
             src="/banner.png"
           />
         </div>
-        <div className="absolute bottom-0 left-0 w-full">
-          <div className="grid max-w-screen-md grid-cols-4 gap-3 mx-auto -mb-24">
+        <div className="absolute bottom-0 left-0 w-full px-8">
+          <div className="grid max-w-screen-md grid-cols-4 gap-3 mx-auto -mb-20 md:-mb-24">
             {[
               { title: "2.3k+", description: "Pelajar Seluruh Malaysia" },
               { title: "30", description: "Siri Kelas Telah Dijalankan" },
@@ -72,18 +89,22 @@ export default function Home() {
             ].map((c) => (
               <div
                 key={c.title}
-                className="p-6 space-y-4 bg-white border rounded-lg shadow"
+                className="p-4 space-y-4 bg-white border rounded-lg shadow md:p-6"
               >
-                <p className="text-5xl font-medium text-[#064F57]">{c.title}</p>
+                <p className="text-3xl md:text-5xl font-medium text-[#064F57]">
+                  {c.title}
+                </p>
                 <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
 
-                <p className="text-gray-600">{c.description}</p>
+                <p className="text-sm text-gray-500 md:text-base ">
+                  {c.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <section className="relative pt-[150px] lg:pt-[200px] pb-[100px]">
+      <section className="relative pt-[150px] lg:pt-[200px] pb-[50px] md:pb-[100px] space-y-4 md:space-y-0">
         <img
           className="absolute top-0 right-0 hidden -z-10 lg:block lg:mt-20"
           src="/pattern.png"
@@ -92,9 +113,12 @@ export default function Home() {
           className="absolute bottom-0 left-0 hidden rotate-180 -z-10 lg:block mb-36"
           src="/pattern.png"
         />
-        <div className="flex items-center justify-between max-w-screen-lg px-16 mx-auto bg-white lg:px-8">
-          <img className="w-[380px] lg:w-[510px]" src="/sub-1.png" />
-          <div className="flex flex-col py-[30px] lg:py-[52px] space-y-8 w-[400px]">
+        <div className="flex flex-col items-center justify-between max-w-screen-lg mx-auto bg-white px-14 md:px-16 md:flex-row lg:px-8">
+          <img
+            className="w-full object-cover h-[280px] rounded-lg md:w-[380px] lg:w-[510px]"
+            src="/sub-1.png"
+          />
+          <div className="flex flex-col py-[30px] lg:py-[52px] space-y-4 md:space-y-8 w-full md:w-[400px]">
             <h2 className="text-2xl font-semibold text-[#064F57]">
               Mengapa Tadabbur?
             </h2>
@@ -113,9 +137,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row-reverse items-center justify-between max-w-screen-lg px-16 mx-auto bg-white lg:px-8 ">
-          <img className="w-[380px] lg:w-[510px]" src="/sub-2.png" />
-          <div className="flex flex-col py-[30px] lg:py-[52px] space-y-8 w-[400px]">
+        <div className="flex flex-col items-center justify-between max-w-screen-lg mx-auto bg-white px-14 md:px-16 md:flex-row-reverse lg:px-8 ">
+          <img
+            className="w-full object-cover h-[280px] rounded-lg md:w-[380px] lg:w-[510px]"
+            src="/sub-2.png"
+          />
+          <div className="flex flex-col py-[30px] lg:py-[52px] space-y-8 w-full md:w-[400px]">
             <div className="space-y-4">
               <p>
                 Tadabbur adalah proses menunaikan hak ayat Allah iaitulah
@@ -136,10 +163,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center py-[100px] bg-[#F6F9F9] space-y-10 px-8 ">
+      <section className="flex flex-col items-center py-[50px] md:py-[100px] bg-[#F6F9F9] space-y-5 md:space-y-10 px-8 ">
         <h2 className="text-2xl font-bold text-[#064F57]">Matlamat Kami</h2>
         <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
-        <div className="grid max-w-screen-lg grid-cols-3 gap-5 mx-auto ">
+        <div className="grid max-w-screen-lg grid-cols-1 gap-5 mx-auto md:grid-cols-3 ">
           {[
             {
               icon: "/icon-1.png",
@@ -159,7 +186,7 @@ export default function Home() {
           ].map((item) => (
             <div
               key={item.icon}
-              className="w-full bg-white rounded-2xl px-10 py-12 space-y-6 border-2 border-[#F2F2F2]"
+              className="w-full bg-white rounded-2xl px-14 py-12 space-y-6 border-2 border-[#F2F2F2]"
             >
               <img src={item.icon} className="w-20 h-20" />
               <h3 className="text-[#064F57] text-2xl font-medium">
@@ -180,9 +207,9 @@ export default function Home() {
           Projek Tadabbur Centre
         </h2>
         <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
-        <div className="flex bg-[#054249] p-14 rounded-2xl space-x-10">
-          <img src="/sub-3.png" className="w-[452px]" />
-          <div className="flex flex-col text-white w-[392px] space-y-5">
+        <div className="flex flex-col md:flex-row bg-[#054249] p-14 rounded-2xl space-y-5 md:space-y-0 md:space-x-10">
+          <img src="/sub-3.png" className="w-full max-w-[452px]" />
+          <div className="flex flex-col text-white w-full md:w-[392px] space-y-5">
             <h3 className="text-2xl font-medium">Kuliah dan Seminar</h3>
             <div>
               <p>
@@ -202,9 +229,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row-reverse bg-[#054249] p-14 rounded-2xl space-x-10 space-x-reverse">
-          <img src="/sub-4.png" className="w-[452px]" />
-          <div className="flex flex-col text-white w-[392px] space-y-5">
+        <div className="flex flex-col md:flex-row-reverse bg-[#054249] p-14 rounded-2xl space-y-5 md:space-y-0 md:space-x-10">
+          <img src="/sub-4.png" className="w-full max-w-[452px]" />
+          <div className="flex flex-col text-white w-full md:w-[392px] space-y-5">
             <h3 className="text-2xl font-medium">Penerbitan</h3>
             <div>
               <p>
@@ -224,9 +251,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex bg-[#054249] p-14 rounded-2xl space-x-10">
-          <img src="/sub-5.png" className="w-[452px]" />
-          <div className="flex flex-col text-white w-[392px] space-y-5">
+        <div className="flex flex-col md:flex-row bg-[#054249] p-14 rounded-2xl space-y-5 md:space-y-0 md:space-x-10">
+          <img src="/sub-5.png" className="w-full max-w-[452px]" />
+          <div className="flex flex-col text-white w-full md:w-[392px] space-y-5">
             <h3 className="text-2xl font-medium">Tadabbur+</h3>
             <div>
               <p>
@@ -247,7 +274,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-[100px] bg-[#F6F9F9] space-y-10 px-4">
+      <section className="py-[100px] bg-[#F6F9F9] space-y-10 px-8">
         <div className="flex items-center justify-between w-full max-w-screen-lg px-4 mx-auto">
           <h2 className="text-2xl font-semibold text-[#064F57]">
             Bacaan & Buah Fikir
@@ -256,7 +283,7 @@ export default function Home() {
             Lihat Semua
           </button>
         </div>
-        <div className="grid max-w-screen-lg grid-cols-3 gap-4 mx-auto">
+        <div className="grid max-w-screen-lg grid-cols-1 gap-4 mx-auto md:grid-cols-3">
           <a
             href="#"
             className="p-4 space-y-10 transition-all duration-300 rounded-3xl hover:-translate-y-1 hover:bg-gray-200"
@@ -316,7 +343,7 @@ export default function Home() {
         </h2>
         <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
         <div className="flex flex-col max-w-screen-lg mx-auto space-y-5">
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
             <div className="space-y-3">
               {[
                 {
@@ -456,7 +483,7 @@ export default function Home() {
         </div>
       </section>
       <footer className="py-20 bg-[#064F57] px-8">
-        <div className="flex items-center justify-between w-full max-w-screen-lg py-5 mx-auto">
+        <div className="flex flex-col items-center justify-between w-full max-w-screen-lg py-5 mx-auto space-y-4 md:space-y-0 md:flex-row">
           <img src="/logo-white.png" className="w-72" />
           <div className="space-x-6 text-sm text-white">
             <a href="#">Utama</a>
