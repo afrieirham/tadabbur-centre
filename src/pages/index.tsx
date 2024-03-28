@@ -34,7 +34,7 @@ export default function Home() {
                 className="flex flex-grow px-3 py-2 text-sm border rounded-md border-input bg-background ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 placeholder="faris@gmail.com"
               />
-              <button className="flex-shrink bg-[#F75B03] text-white px-3 py-2 rounded text-sm">
+              <button className="flex-shrink bg-[#F75B03] text-white px-3 py-2 rounded text-sm font-medium">
                 Langgan
               </button>
             </form>
@@ -138,9 +138,9 @@ export default function Home() {
               className="w-[330px] bg-white rounded-2xl px-10 py-12 space-y-6 border-2 border-[#F2F2F2]"
             >
               <img src={item.icon} className="w-20 h-20" />
-              <p className="text-[#064F57] text-2xl font-medium">
+              <h3 className="text-[#064F57] text-2xl font-medium">
                 {item.title}
-              </p>
+              </h3>
               <p>{item.desc}</p>
             </div>
           ))}
@@ -150,6 +150,78 @@ export default function Home() {
         {[1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6].map((p) => (
           <img src={`/slide-${p}.png`} className="object-cover h-36 w-60" />
         ))}
+      </section>
+      <section className="bg-[#064F57] py-[100px] flex flex-col items-center space-y-10">
+        <h2 className="text-white font-semibold text-4xl">
+          Projek Tadabbur Centre
+        </h2>
+        <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
+        <div className="flex bg-[#054249] p-14 rounded-2xl space-x-10">
+          <img src="/sub-3.png" className="w-[452px]" />
+          <div className="flex flex-col text-white w-[392px] space-y-5">
+            <h3 className="text-2xl font-medium">Kuliah dan Seminar</h3>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                congue eu elit sed rhoncus.
+              </p>
+              <br />
+              <p>
+                Fusce ultrices erat sit amet vestibulum fermentum. Ut vitae nisl
+                aliquam, vestibulum turpis a, viverra sapien.
+              </p>
+            </div>
+            <div>
+              <button className="flex-shrink bg-[#F75B03] text-white px-3 py-2 rounded text-sm font-medium">
+                Jadual Program
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row-reverse bg-[#054249] p-14 rounded-2xl space-x-10 space-x-reverse">
+          <img src="/sub-4.png" className="w-[452px]" />
+          <div className="flex flex-col text-white w-[392px] space-y-5">
+            <h3 className="text-2xl font-medium">Penerbitan</h3>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                congue eu elit sed rhoncus.
+              </p>
+              <br />
+              <p>
+                Fusce ultrices erat sit amet vestibulum fermentum. Ut vitae nisl
+                aliquam, vestibulum turpis a, viverra sapien.
+              </p>
+            </div>
+            <div>
+              <button className="flex-shrink bg-[#F75B03] text-white px-3 py-2 rounded text-sm font-medium">
+                Kedai Online
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="flex bg-[#054249] p-14 rounded-2xl space-x-10">
+          <img src="/sub-5.png" className="w-[452px]" />
+          <div className="flex flex-col text-white w-[392px] space-y-5">
+            <h3 className="text-2xl font-medium">Tadabbur+</h3>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                congue eu elit sed rhoncus.
+              </p>
+              <br />
+              <p>
+                Fusce ultrices erat sit amet vestibulum fermentum. Ut vitae nisl
+                aliquam, vestibulum turpis a, viverra sapien.
+              </p>
+            </div>
+            <div>
+              <button className="flex-shrink bg-[#F75B03] text-white px-3 py-2 rounded text-sm font-medium">
+                Sertai Kami
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
