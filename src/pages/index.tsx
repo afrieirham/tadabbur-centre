@@ -14,8 +14,8 @@ export default function Home() {
         path="/"
       />
       <nav className="flex items-center justify-between w-full max-w-screen-lg px-6 py-5 mx-auto sm:px-16 lg:px-8">
-        <img src="/logo.png" className="md:w-72 w-52" />
-        <div className="space-x-4 text-sm font-medium text-[#064F57] hidden md:block">
+        <img src="/logo.png" className="lg:w-72 w-52" />
+        <div className="space-x-4 text-sm font-medium text-[#064F57] hidden lg:block">
           <a
             href="#"
             className="text-[#F75B03] font-semibold px-3 py-2 transition-all rounded-lg hover:bg-gray-100"
@@ -41,7 +41,7 @@ export default function Home() {
             Produk
           </a>
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-6 h-6 icon icon-tabler icon-tabler-menu-2"
@@ -60,9 +60,9 @@ export default function Home() {
         </div>
       </nav>
       {/* main section */}
-      <section className="relative px-6 sm:px-16 lg:px-8 pt-[60px] pb-[280px] sm:pb-[120px] md:py-[120px] bg-[url(/hero.png)] bg-no-repeat bg-cover z-10">
-        <div className="flex flex-col items-center max-w-screen-lg mx-auto space-y-8 md:space-x-8 md:flex-row md:space-y-0">
-          <div className="flex-1 space-y-8 text-center md:text-left">
+      <section className="relative px-6 sm:px-16 lg:px-8 pt-[60px] pb-[280px] sm:pb-[120px] lg:py-[120px] bg-[url(/hero.png)] bg-no-repeat bg-cover z-10">
+        <div className="flex flex-col items-center max-w-screen-lg mx-auto space-y-8 lg:space-x-8 lg:flex-row lg:space-y-0">
+          <div className="flex-1 space-y-8 text-center lg:text-left">
             <h1 className="text-4xl font-semibold text-white sm:text-6xl">
               Al-Qur&apos;an
               <br />
@@ -72,23 +72,23 @@ export default function Home() {
               Tadabbur Centre ditubuhkan untuk menyahut rasa dahaga masyarakat
               kepada pengisian Al Quran.
             </p>
-            <form className="flex flex-col items-center justify-center w-full max-w-[400px] mx-auto space-y-4 md:space-y-0 md:space-x-4 md:flex-row md:w-10/12 md:mx-0">
+            <form className="flex flex-col items-center justify-center w-full max-w-[400px] mx-auto space-y-4 lg:space-y-0 lg:space-x-4 lg:flex-row lg:w-10/12 lg:mx-0">
               <input
-                className="flex flex-grow w-full px-3 py-2 text-sm border rounded-md md:w-auto border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                className="flex flex-grow w-full px-3 py-2 text-sm border rounded-md lg:w-auto border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 placeholder="faris@gmail.com"
               />
-              <button className="flex-shrink w-full md:w-auto bg-[#F75B03] hover:bg-[#ff8b47] transition-all duration-300 text-white px-3 py-2 rounded text-sm font-medium">
+              <button className="flex-shrink w-full lg:w-auto bg-[#F75B03] hover:bg-[#ff8b47] transition-all duration-300 text-white px-3 py-2 rounded text-sm font-medium">
                 Langgan
               </button>
             </form>
           </div>
           <img
-            className="w-full aspect-video md:aspect-auto rounded-lg object-cover md:max-w-[400px] lg:max-w-[510px]"
+            className="w-full aspect-video lg:aspect-auto rounded-lg object-cover lg:max-w-[510px]"
             src="/banner.png"
           />
         </div>
         <div className="absolute bottom-0 left-0 w-full px-8">
-          <div className="grid max-w-screen-md grid-cols-2 gap-3 mx-auto -mb-20 sm:grid-cols-4 md:-mb-24">
+          <div className="grid max-w-screen-md grid-cols-2 gap-3 mx-auto -mb-20 sm:grid-cols-4 lg:-mb-24">
             {[
               { title: "2.3k+", description: "Pelajar Seluruh Malaysia" },
               { title: "30", description: "Siri Kelas Telah Dijalankan" },
@@ -97,14 +97,14 @@ export default function Home() {
             ].map((c) => (
               <div
                 key={c.title}
-                className="p-4 space-y-4 bg-white border rounded-lg shadow md:p-6"
+                className="p-4 space-y-4 bg-white border rounded-lg shadow lg:p-6"
               >
-                <p className="text-3xl md:text-5xl font-medium text-[#064F57]">
+                <p className="text-3xl lg:text-5xl font-medium text-[#064F57]">
                   {c.title}
                 </p>
                 <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
 
-                <p className="text-sm text-gray-500 md:text-base ">
+                <p className="text-sm text-gray-500 lg:text-base ">
                   {c.description}
                 </p>
               </div>
@@ -112,21 +112,21 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative pt-[100px] sm:pt-[150px] lg:pt-[200px] pb-[50px] md:pb-[100px] space-y-4 md:space-y-0">
+      <section className="relative pt-[100px] sm:pt-[150px] lg:pt-[200px] pb-[50px] lg:pb-[100px] space-y-10 lg:space-y-0">
         <img
-          className="absolute top-0 right-0 hidden -z-10 lg:block lg:mt-20"
+          className="absolute right-0 hidden top-40 -z-10 lg:block"
           src="/pattern.png"
         />
         <img
-          className="absolute bottom-0 left-0 hidden rotate-180 -z-10 lg:block mb-36"
+          className="absolute left-0 hidden rotate-180 lg:block bottom-20 -z-10 "
           src="/pattern.png"
         />
-        <div className="flex flex-col items-center justify-between max-w-screen-lg px-6 mx-auto bg-white sm:px-14 md:px-16 md:flex-row lg:px-8">
+        <div className="flex flex-col items-center justify-between max-w-screen-lg px-6 mx-auto bg-white sm:px-14 lg:flex-row lg:px-8">
           <img
-            className="w-full object-cover sm:h-[280px] rounded-lg md:w-[380px] lg:w-[510px]"
+            className="w-full object-cover sm:h-auto rounded-lg lg:w-[510px]"
             src="/sub-1.png"
           />
-          <div className="flex flex-col py-[30px] lg:py-[52px] space-y-4 md:space-y-8 w-full md:w-[400px]">
+          <div className="flex flex-col py-[30px] lg:py-[52px] space-y-4 lg:space-y-8 w-full lg:w-[400px]">
             <h2 className="text-2xl font-semibold text-[#064F57]">
               Mengapa Tadabbur?
             </h2>
@@ -145,12 +145,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between max-w-screen-lg px-6 mx-auto bg-white sm:px-14 md:px-16 md:flex-row-reverse lg:px-8 ">
+        <div className="flex flex-col items-center justify-between max-w-screen-lg px-6 mx-auto bg-white sm:px-14 lg:flex-row-reverse lg:px-8 ">
           <img
-            className="w-full object-cover sm:h-[280px] rounded-lg md:w-[380px] lg:w-[510px]"
+            className="w-full object-cover sm:h-auto rounded-lg lg:w-[510px]"
             src="/sub-2.png"
           />
-          <div className="flex flex-col py-[30px] lg:py-[52px] space-y-8 w-full md:w-[400px]">
+          <div className="flex flex-col py-[30px] lg:py-[52px] space-y-8 w-full lg:w-[400px]">
             <div className="space-y-4">
               <p>
                 Tadabbur adalah proses menunaikan hak ayat Allah iaitulah
@@ -171,10 +171,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center py-[50px] md:py-[100px] bg-[#F6F9F9] space-y-5 md:space-y-10 px-6 ">
+      <section className="flex flex-col items-center py-[50px] lg:py-[100px] bg-[#F6F9F9] space-y-5 lg:space-y-10 px-6 ">
         <h2 className="text-2xl font-bold text-[#064F57]">Matlamat Kami</h2>
         <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
-        <div className="grid max-w-screen-lg grid-cols-1 gap-5 mx-auto md:grid-cols-3 ">
+        <div className="grid max-w-screen-lg grid-cols-1 gap-5 mx-auto lg:grid-cols-3 ">
           {[
             {
               icon: "/icon-1.png",
@@ -219,9 +219,9 @@ export default function Home() {
           Projek Tadabbur Centre
         </h2>
         <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
-        <div className="flex flex-col md:flex-row bg-[#054249] p-6 sm:p-14 rounded-2xl space-y-5 md:space-y-0 md:space-x-10">
+        <div className="items-center flex flex-col lg:flex-row bg-[#054249] p-6 sm:p-14 rounded-2xl space-y-5 lg:space-y-0 lg:space-x-10">
           <img src="/sub-3.png" className="w-full max-w-[452px]" />
-          <div className="flex flex-col text-white w-full md:w-[392px] space-y-5">
+          <div className="flex flex-col text-white w-full lg:w-[392px] space-y-5">
             <h3 className="text-2xl font-medium">Kuliah dan Seminar</h3>
             <div>
               <p>
@@ -241,9 +241,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse bg-[#054249] p-6 sm:p-14 rounded-2xl space-y-5 md:space-y-0 md:space-x-10">
+        <div className="items-center flex flex-col lg:flex-row-reverse bg-[#054249] p-6 sm:p-14 rounded-2xl space-y-5 lg:space-y-0 lg:space-x-10">
           <img src="/sub-4.png" className="w-full max-w-[452px]" />
-          <div className="flex flex-col text-white w-full md:w-[392px] space-y-5">
+          <div className="flex flex-col text-white w-full lg:w-[392px] space-y-5">
             <h3 className="text-2xl font-medium">Penerbitan</h3>
             <div>
               <p>
@@ -263,9 +263,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row bg-[#054249] p-6 sm:p-14 rounded-2xl space-y-5 md:space-y-0 md:space-x-10">
+        <div className="items-center flex flex-col lg:flex-row bg-[#054249] p-6 sm:p-14 rounded-2xl space-y-5 lg:space-y-0 lg:space-x-10">
           <img src="/sub-5.png" className="w-full max-w-[452px]" />
-          <div className="flex flex-col text-white w-full md:w-[392px] space-y-5">
+          <div className="flex flex-col text-white w-full lg:w-[392px] space-y-5">
             <h3 className="text-2xl font-medium">Tadabbur+</h3>
             <div>
               <p>
@@ -491,7 +491,7 @@ export default function Home() {
         </div>
       </section>
       <footer className="py-20 bg-[#064F57] px-6">
-        <div className="flex flex-col items-center justify-between w-full max-w-screen-lg py-5 mx-auto space-y-4 md:space-y-0 md:flex-row">
+        <div className="flex flex-col items-center justify-between w-full max-w-screen-lg py-5 mx-auto space-y-4 lg:space-y-0 lg:flex-row">
           <img src="/logo-white.png" className="w-72" />
           <div className="space-x-6 text-sm text-white">
             <a href="#">Utama</a>
