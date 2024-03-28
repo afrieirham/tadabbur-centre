@@ -1,10 +1,18 @@
 import { Inter } from "next/font/google";
+import SEOHead from "./components/SEOHead";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <div className={`${inter.className}`}>
+      <SEOHead
+        title="Al-Quran untuk Semua | Tadabbur Centre"
+        description="Tadabbur Centre ditubuhkan untuk menyahut rasa dahaga masyarakat
+              kepada pengisian Al Quran."
+        ogPath="/"
+        path="/"
+      />
       <nav className="flex items-center justify-between w-full max-w-screen-lg px-6 py-5 mx-auto sm:px-16 lg:px-8">
         <img src="/logo.png" className="md:w-72 w-52" />
         <div className="space-x-4 text-sm font-medium text-[#064F57] hidden md:block">
@@ -52,7 +60,6 @@ export default function Home() {
         </div>
       </nav>
       {/* main section */}
-      {/* <section className="relative px-6 sm:px-16 lg:px-8 pt-[60px] pb-[280px] sm:pb-[120px] md:py-[120px] bg-gradient-to-b from-[#006559] to-[#064F57] z-10"> */}
       <section className="relative px-6 sm:px-16 lg:px-8 pt-[60px] pb-[280px] sm:pb-[120px] md:py-[120px] hero z-10">
         <div className="flex flex-col items-center max-w-screen-lg mx-auto space-y-8 md:space-x-8 md:flex-row md:space-y-0">
           <div className="flex-1 space-y-8 text-center md:text-left">
