@@ -146,7 +146,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="py-[100px] w-full flex space-x-5 overflow-scroll">
+      <section className="py-[30px] my-[70px] w-full flex space-x-5 overflow-scroll">
         {[1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6].map((p) => (
           <img src={`/slide-${p}.png`} className="object-cover h-36 w-60" />
         ))}
