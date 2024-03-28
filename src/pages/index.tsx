@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div className={`${inter.className} pb-32`}>
-      <nav className="flex items-center justify-between w-full max-w-screen-lg py-5 mx-auto">
+      <nav className="flex items-center justify-between w-full py-5 mx-auto max-w-screen-lg">
         <img src="/logo.png" />
         <div className="space-x-6 text-sm font-medium text-[#064F57]">
           <a href="#" className="text-[#F75B03] font-semibold">
@@ -42,7 +42,7 @@ export default function Home() {
           <img className="flex-1" src="/banner.png" />
         </div>
         <div className="absolute bottom-0 left-0 w-full">
-          <div className="grid max-w-screen-md grid-cols-4 gap-3 mx-auto -mb-24">
+          <div className="mx-auto -mb-24 grid max-w-screen-md grid-cols-4 gap-3">
             {[
               { title: "2.3k+", description: "Pelajar Seluruh Malaysia" },
               { title: "30", description: "Siri Kelas Telah Dijalankan" },
@@ -51,7 +51,7 @@ export default function Home() {
             ].map((c) => (
               <div
                 key={c.title}
-                className="p-6 space-y-4 bg-white border rounded-lg shadow"
+                className="p-6 bg-white border rounded-lg shadow space-y-4"
               >
                 <p className="text-5xl font-medium text-[#064F57]">{c.title}</p>
                 <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
@@ -68,7 +68,7 @@ export default function Home() {
           className="absolute bottom-0 left-0 rotate-180 mb-36"
           src="/pattern.png"
         />
-        <div className="flex items-center justify-between max-w-screen-lg mx-auto">
+        <div className="flex items-center justify-between mx-auto max-w-screen-lg">
           <img className="w-[510px]" src="/sub-1.png" />
           <div className="flex flex-col py-[52px] space-y-8 w-[400px]">
             <h2 className="text-2xl font-semibold text-[#064F57]">
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row-reverse items-center justify-between max-w-screen-lg mx-auto">
+        <div className="flex flex-row-reverse items-center justify-between mx-auto max-w-screen-lg">
           <img className="w-[510px]" src="/sub-2.png" />
           <div className="flex flex-col py-[52px] space-y-8 w-[400px]">
             <div className="space-y-4">
@@ -115,7 +115,7 @@ export default function Home() {
       <section className="flex flex-col items-center py-[100px] bg-[#F6F9F9] space-y-10">
         <h2 className="text-2xl font-bold text-[#064F57]">Matlamat Kami</h2>
         <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
-        <div className="grid max-w-screen-lg grid-cols-3 gap-10 mx-auto">
+        <div className="mx-auto grid max-w-screen-lg grid-cols-3 gap-10">
           {[
             {
               icon: "/icon-1.png",
@@ -152,7 +152,7 @@ export default function Home() {
         ))}
       </section>
       <section className="bg-[#064F57] py-[100px] flex flex-col items-center space-y-10">
-        <h2 className="text-white font-semibold text-4xl">
+        <h2 className="text-4xl font-semibold text-white">
           Projek Tadabbur Centre
         </h2>
         <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
@@ -219,6 +219,60 @@ export default function Home() {
               <button className="flex-shrink bg-[#F75B03] text-white px-3 py-2 rounded text-sm font-medium">
                 Sertai Kami
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-[100px] bg-[#F6F9F9] space-y-10">
+        <div className="flex items-center justify-between w-full mx-auto max-w-screen-lg">
+          <h2 className="text-2xl font-semibold text-[#064F57]">
+            Bacaan & Buah Fikir
+          </h2>
+          <button className="px-3 py-2 bg-white rounded-lg text-[#36364A] text-sm font-medium border">
+            Lihat Semua
+          </button>
+        </div>
+        <div className="mx-auto grid max-w-screen-lg grid-cols-3 gap-8">
+          <div className="space-y-10">
+            <img src="/article-1.png" />
+            <div className="space-y-4">
+              <h3 className="text-[#064F57] font-medium">
+                Tidakkah Kamu Melihat?
+              </h3>
+              <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
+              <p className="text-sm text-gray-500">23 Mac 2023</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                congue eu elit sed rhoncus.
+              </p>
+            </div>
+          </div>
+          <div className="space-y-10">
+            <img src="/article-2.png" />
+            <div className="space-y-4">
+              <h3 className="text-[#064F57] font-medium">
+                Ibrah Peristiwa Palestin
+              </h3>
+              <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
+              <p className="text-sm text-gray-500">20 Mac 2023</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                congue eu elit sed rhoncus.
+              </p>
+            </div>
+          </div>
+          <div className="space-y-10">
+            <img src="/article-3.png" />
+            <div className="space-y-4">
+              <h3 className="text-[#064F57] font-medium">
+                Al-Qur’an dan Ramadan
+              </h3>
+              <hr className="h-[2px] w-[60px] bg-[#F75B03] border-0" />
+              <p className="text-sm text-gray-500">06 Mac 2023</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                congue eu elit sed rhoncus.
+              </p>
             </div>
           </div>
         </div>
